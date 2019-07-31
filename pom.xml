@@ -11,6 +11,8 @@
     <modules>
         <module>eureka-service</module>
       <module>eureka-client</module>
+      <module>feign-api</module>
+      <module>feign-service</module>
     </modules>
 
     <parent>
