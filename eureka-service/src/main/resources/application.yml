@@ -10,6 +10,7 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 0
+    # 是否开启自我保护模式,开启后：当最近一分钟接收到的续约次数小于等于指定阈值，则关闭租约失效剔除,禁止定时任务剔出实例
     enable-self-preservation: false
 spring:
   application:
